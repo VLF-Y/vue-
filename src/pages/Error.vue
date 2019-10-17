@@ -1,7 +1,7 @@
 <template>
     <div class="error">
         <h3>error</h3>
-        <router-link to="/home">首页</router-link>
+        <!-- <router-link to="/home">首页</router-link> -->
     </div>
 </template>
 <style scoped>
