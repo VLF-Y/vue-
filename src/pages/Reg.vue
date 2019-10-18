@@ -7,19 +7,15 @@
 	<div class="mui-content">
 			<form class="mui-input-group">
 				<div class="mui-input-row">
-					<label>账号</label>
 					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
 				</div>
 				<div class="mui-input-row">
-					<label>密码</label>
 					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
 				</div>
 				<div class="mui-input-row">
-					<label>确认</label>
 					<input id='password_confirm' type="password" class="mui-input-clear mui-input" placeholder="请确认密码">
 				</div>
 				<div class="mui-input-row">
-					<label>邮箱</label>
 					<input id='email' type="email" class="mui-input-clear mui-input" placeholder="请输入邮箱">
 				</div>
 			</form>

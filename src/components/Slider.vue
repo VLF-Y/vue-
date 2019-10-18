@@ -1,76 +1,64 @@
 <template>
-  <div class="inbox">
-    <div class="mui-slider" id="slider">
-      <ul class="mui-slider-group mui-slider-loop">
-        <li class="mui-slider-item">
-          <a href="#">
-            <img src="images/qing-tou.png" />
-          </a>
-        </li>
-        <li class="mui-slider-item">
-          <a href="#">
-            <img src="images/qing-tou.png" />
-          </a>
-        </li>
-        <li class="mui-slider-item">
-          <a href="#">
-            <img src="images/qing-tou.png" />
-          </a>
-        </li>
-        <li class="mui-slider-item">
-          <a href="#">
-            <img src="images/qing-tou.png" />
-          </a>
-        </li>
-        <li class="mui-slider-item">
-          <a href="#">
-            <img src="images/qing-tou.png" />
-          </a>
-        </li>
-      </ul>
-      <ul class="mui-slider-indicator">
-        <li class="mui-indicator mui-active"></li>
-        <li class="mui-indicator"></li>
-        <li class="mui-indicator"></li>
-      </ul>
-    </div>  
+  <div class="banner">
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
+    <swipe class="my-swipe" :speed="500">
+      <swipe-item class="slide">
+        <img src="images/qing-tou.png" alt />
+      </swipe-item>
+    </swipe>
   </div>
 </template>
-<style>
-.inbox .mui-slider {
-  width: 100%;
-  height: 8em;
-  overflow: hidden;
-}
-.inbox .mui-slider .mui-slider-group {
-  width: 100%;
-}
-.inbox .mui-slider ul li img {
-  width: 100%;
-  min-height: 100%;
-}
 
-
-</style>
 <script>
-import $ from 'jquery';
-import Swipe from '../assets/js/swipe.js';
 
+import 'vue-swipe/dist/vue-swipe.css'
+import { Swipe, SwipeItem } from 'vue-swipe';
 export default {
-  props:['slider'],
-  mounted(){   // 钩子函数：渲染完毕后再控制
-    new Swipe($('#slider mui-slider-item')[0],{
-      auto:2000,
-      continuous:true,
-      stopPropation:true,
-      callback:function (index,element){
-        $('#slider mui-slider-item').removeClass('active');
-        $('#slider mui-slider-item').eq(index).addClass('active');
-      }
-    })
-
-  },
+  components: {
+    'swipe': Swipe,
+    'swipe-item': SwipeItem
+  }
 }
-
 
 </script>
+
+<style scoped>
+.my-swipe {
+  height: 200px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.slide {
+  height: 200px;
+}
+.slide img{
+  height: 200px;
+}
+
+</style>
