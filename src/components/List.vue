@@ -1,15 +1,15 @@
 <template>
     <section class="sort">
 	    	<ul class="mui-table-view">
-	    	    <li class="mui-table-view-cell mui-media">
-	    			<a href="zifei.html">
-	    	            <img class="mui-media-object mui-pull-left" src="images/aa3.png">
+				<router-link tag="li" active-class="active"              class="mui-table-view-cell mui-media" to="/Detail">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/aa3.png">
 	    	            <div class="mui-media-body">
 	    	                自费钣金喷漆
 	    	                <p class="mui-ellipsis">上门取送，当天交车</p>
 	    	            </div>
-	    	        </a>
-	    	    </li>
+					</a>
+				</router-link>
 	    	    <li class="mui-table-view-cell mui-media">
 	    	        <a href="bao.html">
 	    	            <img class="mui-media-object mui-pull-left" src="images/aaaa5.png">

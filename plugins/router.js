@@ -6,6 +6,8 @@ import Set from '../src/pages/Set.vue'
 import Self from '../src/pages/Self.vue'
 import  Compose from '../src/pages/Compose.vue'
 import Reg from '../src/pages/Reg.vue'
+import Detail from '../src/pages/Detail.vue'
+import Gowu from '../src/pages/Gowu.vue'
 Vue.use(VueRouter);
 
 
@@ -22,13 +24,13 @@ let routes=[
   {path:'/Self',component:Self,name:'Self'},
   {path:'/Set',component:Set,name:'Set'},
   {path:'/Compose',component:Compose,name:'Compose'},
+  {path:'/Detail',component:Detail,name:'Detail'},
+  {path:'/Gowu',component:Gowu,name:'Gowu'},
 
   // {path:'/Detail/:id',component:Detail,name:'detail',props:true},
   // {path:'/Detail/:id',component:Detail,name:'detail',props:(route)=>({id:route.params.id,dataName:route.query.dataName})},
   // {path:'/Detail/:id',component:Detail,name:'detail',props:(route)=>({id:route.params.id,...route.query})},
-  {path:'/',redirect:'/home'},
-  {path:'*',component:Error},
-
+  {path:'/*',redirect:'/Home'},
 ];
 
 export default new VueRouter({routes})

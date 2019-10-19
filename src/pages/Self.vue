@@ -24,7 +24,7 @@
     <section class="self-con">
       <ul class="mui-table-view mui-table-view-chevron">
         <router-link
-          tag="li"
+          tag="div"
           active-class="active"
           class="mui-table-view-cell mui-media"
           to="/Mycar"
@@ -34,7 +34,7 @@
           <p class="car">我的车</p>
         </router-link>
         <router-link
-          tag="li"
+          tag="div"
           active-class="active"
           class="mui-table-view-cell mui-media"
           to="/Gowu"
