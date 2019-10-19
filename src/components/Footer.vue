@@ -4,22 +4,22 @@
       <router-link tag="li" active-class="active" to="/Home">
         <a href="javascript:;">
 			<span class="mui-icon mui-icon-home"></span>
-		</a>
+		    </a>
       </router-link>
-	  <router-link tag="li" active-class="active" to="/Compose">
+	    <router-link tag="li" active-class="active" to="/Compose">
         <a href="javascript:;">
 			<span class="mui-icon mui-icon-compose"></span>
-		</a>
+		    </a>
        </router-link>
        <router-link tag="li" active-class="active" to="/Self">
         <a href="javascript:;">
 			<span class="mui-icon mui-icon-contact"></span>
-		</a>
+	    	</a>
       </router-link>
       <router-link tag="li" active-class="active" to="/Set">
         <a href="javascript:;">
 			<span class="mui-icon mui-icon-gear"></span>
-		</a>
+		    </a>
       </router-link>
     </ul>
   </footer>

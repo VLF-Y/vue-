@@ -26,9 +26,9 @@
                 <li class="mui-table-view-cell">
                     <a href="#general" class="mui-navigate-right">通用</a>
                 </li>
-                <li class="mui-table-view-cell" style="text-align: center; width: 100%; padding: 2% 0; margin: 0;">
-                    <a style="display: block; width: 100%; margin: 0;" href="login.html">退出登录</a>
-                </li>
+                <router-link tag="li"  class="mui-table-view-cell" style="text-align: center; width: 100%; padding: 2% 0; margin: 0;"  to="/Login">
+					<a style="display: block; width: 100%; margin: 0;" href="javascript:;">退出登录</a>
+			  </router-link>
             </ul>
         </div>
  </div>

@@ -22,13 +22,19 @@
                 </li>
             </ul>
         </form>
-        <div class="mui-content-padded">
-           <a href="index.html"><button id='login' class="mui-btn mui-btn-block mui-btn-primary" >登录</button></a>
-           <div class="link-area">
-               <a id='reg' href="reg.html">注册账号</a> 
-               <span class="spliter"></span>
-        </div>
-      </div>
+      <div class="mui-content-padded">
+        <router-link tag="div" active-class="active" to="/Home">
+            <a href="javascript:;">
+                <button id='login' class="mui-btn mui-btn-block mui-btn-primary" >登录</button>
+            </a>
+        </router-link>
+        <router-link tag="div" active-class="active" to="/Reg">
+            <div class="link-area">
+                <a id='reg' href="javascript:;">注册账号</a> 
+                <span class="spliter"></span>
+            </div>
+        </router-link>
+	 </div>
     </div>
 </div>
 </template>
@@ -86,7 +92,7 @@
         background-position: center center;
         background-repeat: no-repeat;
         margin: 0px 20px;
-        /*-webkit-filter: grayscale(100%); */
+
         
         border: solid 1px #ddd;
         border-radius: 25px;

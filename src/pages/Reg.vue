@@ -1,8 +1,10 @@
 <template>
 <div>
 <header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<router-link tag="div" active-class="active" to="/Login">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:;"></a>
 			<h1 class="mui-title">注册</h1>
+	</router-link>
     </header>
 	<div class="mui-content">
 			<form class="mui-input-group">
@@ -20,7 +22,12 @@
 				</div>
 			</form>
 			<div class="mui-content-padded">
-				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
+				<router-link tag="div" active-class="active" to="/Login">
+					<a href="javascript:;">
+						<button id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
+					</a>
+				</router-link>
+				
 			</div>
 			<div class="mui-content-padded">
 				<p>注册真实可用，注册成功后的用户可用于登录，但是示例程序并未和服务端交互，用户相关数据仅存储于本地。</p>
